@@ -84,35 +84,54 @@ All HTML templates are located in the `templates/` directory and rendered using 
 ## 📸 Screenshots
 
 ### 🏠 Homepage
-![Homepage](screenshots/home.png)
+![home](https://github.com/user-attachments/assets/9b56fdaf-14b9-4417-bfbe-c27d5fcab5f9)
+
 
 ---
 
 ### 🔐 Authentication
-![Register](screenshots/register.png)
-![Login](screenshots/login.png)
+![register](https://github.com/user-attachments/assets/621cfb6a-83a4-4fe9-9e56-263b4ed341a6)
+
+![login](https://github.com/user-attachments/assets/4f4cb0f4-5c3d-46ca-b7be-e8ccfbdc9739)
+
+
 
 ---
 
 ### 👤 Job Seeker View
-![JobSeeker_Homepage](screenshots/jobSeeker_home.png)
-![Apply_Job](screenshots/apply_job.png)
-![My_Applications](screenshots/my_applications.png)
+![jobSeeker_home](https://github.com/user-attachments/assets/8eca911d-d27d-46a3-82cd-891ef5aa608f)
+
+![apply_job](https://github.com/user-attachments/assets/95e428b1-e2cb-4522-882a-5a001e2cac7b)
+
+![my_applications](https://github.com/user-attachments/assets/b5c530d5-1ff8-4082-b5e2-9ef04917b656)
+
 
 ---
 
 ### 🧑‍💼 Employer View
-![Post_Job](screenshots/post_job.png)
-![Manage_Job_Listings](screenshots/manage_job_listings.png)
-![Manage_Job](screenshots/edit_job.png)
-![View_Job_Applications](screenshots/view_job_applications.png)
+![post_job](https://github.com/user-attachments/assets/6be14b7e-8728-4bac-b982-d488f5b90115)
+
+![manage_job_listings](https://github.com/user-attachments/assets/0b5f08ca-9182-4b60-8341-4feb9461b998)
+
+![edit_job](https://github.com/user-attachments/assets/8b22221d-417c-4f92-b6bd-8bff4dac2a44)
+
+![view_applications](https://github.com/user-attachments/assets/da82a71d-d476-4ea3-80ba-33b02c764f30)
+
 
 ---
 
 ### 🛡️ Admin Panel
-![Admin_Users_Lists](screenshots/admin_users.png)
-![Admin_Edit_Users](screenshots/admin_edit_users.png)
-![Admin_Job_Lists](screenshots/admin_jobs.png)
-![Admin_Edit_Jobs](screenshots/admin_edit_jobs.png)
-![Admin_Applications_Lists](screenshots/admin_applications.png)
-![Admin_Edit_Applications](screenshots/admin_edit_applications.png)
+![admin_users](https://github.com/user-attachments/assets/9547cbf4-ab6d-4e4a-b288-cc8d3738a55e)
+
+![admin_edit_users](https://github.com/user-attachments/assets/f1c1fd4f-6726-4a4e-905f-4621c69d2391)
+
+![admin_jobs](https://github.com/user-attachments/assets/b2d84cb8-fd78-4c42-a99c-a3288bfe0794)
+
+![admin_edit_jobs](https://github.com/user-attachments/assets/21e13f54-90bd-403f-94af-71be1e86b3bb)
+
+![admin_applications](https://github.com/user-attachments/assets/e567d210-f6d0-42d3-a709-aeefc962e191)
+
+![admin_edit_applications](https://github.com/user-attachments/assets/77d32846-9c84-4fad-aab9-2efa1e2c8a18)
+
+
+
