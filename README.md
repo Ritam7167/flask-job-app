@@ -37,7 +37,15 @@ pip install -r requirements.txt
 
 ## 📁 Project Structure
 
-flask_job-app/ │ ├── app.py # Main application script │ ├── database/ │ ├── db.py # Configure and initialize the database │ └── models.py # SQLAlchemy models with relationships │ ├── templates/ # HTML templates (Jinja2 for Flask) │ ├── screenshots/ # Screenshots used in README │ ├── requirements.txt # List of Python dependencies └── README.md # Project documentation
+flask_job-app/ 
+│ ├── app.py # Main application script 
+│ ├── database/ 
+│     ├── db.py # Configure and initialize the database 
+│     └── models.py # SQLAlchemy models with relationships 
+│ ├── templates/ # HTML templates (Jinja2 for Flask) 
+│ ├── screenshots/ # Screenshots used in README 
+  └── README.md # Project documentation
+│ ├── requirements.txt # List of Python dependencies 
 
 ---
 
