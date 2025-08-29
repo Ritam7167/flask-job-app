@@ -84,7 +84,8 @@ All HTML templates are located in the `templates/` directory and rendered using 
 ## 📸 Screenshots
 
 ### 🏠 Homepage
-![Homepage](screenshots/home.png)
+<img width="1920" height="1080" alt="home" src="https://github.com/user-attachments/assets/c1ed45c2-e6fc-406b-8de2-05b4ecc15e96" />
+
 
 ---
 
