@@ -90,30 +90,34 @@ All HTML templates are located in the `templates/` directory and rendered using 
 ---
 
 ### 🔐 Authentication
-![Register](screenshots/register.png)
-![Login](screenshots/login.png)
+<img width="1920" height="1080" alt="register" src="https://github.com/user-attachments/assets/f1f7a132-a008-42aa-8ab4-79bd77250540" />
+<img width="1920" height="1080" alt="login" src="https://github.com/user-attachments/assets/f02fa39f-5546-4a95-8f52-8bf221f872df" />
+
 
 ---
 
 ### 👤 Job Seeker View
-![JobSeeker_Homepage](screenshots/jobSeeker_home.png)
-![Apply_Job](screenshots/apply_job.png)
-![My_Applications](screenshots/my_applications.png)
+<img width="1920" height="1080" alt="jobSeeker_home" src="https://github.com/user-attachments/assets/f1698884-6813-4825-ad5b-2705788ea481" />
+<img width="1920" height="1080" alt="apply_job" src="https://github.com/user-attachments/assets/622a5766-b1c0-443d-895c-d638b0a93149" />
+<img width="1920" height="1080" alt="my_applications" src="https://github.com/user-attachments/assets/69bfc3cf-e1e7-46df-983e-a289cfb4d480" />
+
 
 ---
 
 ### 🧑‍💼 Employer View
-![Post_Job](screenshots/post_job.png)
-![Manage_Job_Listings](screenshots/manage_job_listings.png)
-![Manage_Job](screenshots/edit_job.png)
-![View_Job_Applications](screenshots/view_job_applications.png)
+<img width="1920" height="1080" alt="post_job" src="https://github.com/user-attachments/assets/df6a588b-fd13-40f3-b602-d4e14ace1725" />
+<img width="1920" height="1080" alt="manage_job_listings" src="https://github.com/user-attachments/assets/47e100f9-7746-43c9-9a8b-952d567c39d2" />
+<img width="1920" height="1080" alt="edit_job" src="https://github.com/user-attachments/assets/205a9e1b-5280-437c-9196-fa9950bc2713" />
+<img width="1920" height="1080" alt="view_applications" src="https://github.com/user-attachments/assets/538e05ad-c069-45f5-b1ab-c198ba5badea" />
+
 
 ---
 
 ### 🛡️ Admin Panel
-![Admin_Users_Lists](screenshots/admin_users.png)
-![Admin_Edit_Users](screenshots/admin_edit_users.png)
-![Admin_Job_Lists](screenshots/admin_jobs.png)
-![Admin_Edit_Jobs](screenshots/admin_edit_jobs.png)
-![Admin_Applications_Lists](screenshots/admin_applications.png)
-![Admin_Edit_Applications](screenshots/admin_edit_applications.png)
+<img width="1920" height="1080" alt="admin_users" src="https://github.com/user-attachments/assets/4a412e94-c49d-4393-b3c0-d21a51f66a30" />
+<img width="1920" height="1080" alt="admin_edit_users" src="https://github.com/user-attachments/assets/fb7cbccf-660b-42c8-a983-cf3b21a63ef1" />
+<img width="1920" height="1080" alt="admin_jobs" src="https://github.com/user-attachments/assets/94c79d03-ae48-447e-bc19-c6bf8c39bbe0" />
+<img width="1920" height="1080" alt="admin_edit_jobs" src="https://github.com/user-attachments/assets/b02c524e-1138-4b34-91b2-4eb7e722687b" />
+<img width="1920" height="1080" alt="admin_applications" src="https://github.com/user-attachments/assets/e4f887c4-b5f9-464c-b0b5-59533f674057" />
+<img width="1920" height="1080" alt="admin_edit_applications" src="https://github.com/user-attachments/assets/c162035d-2117-4377-a954-0d0ec8bd99b1" />
+
