@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Admin Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{{ url_for('admin_manage_applications') }}">Admin Dashboard</a>
+            <li class="nav-item">
+                <span class="navbar-text">Welcome, {{ session['username'] }}</span>
+            </li>
+            <div class="d-flex ms-auto">
+                <a href="{{ url_for('admin_manage_users') }}" class="mx-2 btn btn-outline-light">Manage Users</a>
+                <a href="{{ url_for('admin_manage_jobs') }}" class="mx-2 btn btn-outline-light">Manage Jobs</a>
+                <a href="{{ url_for('admin_manage_applications') }}" class="mx-2 btn btn-outline-light">Manage Applications</a>
+                <a href="{{ url_for('logout') }}" class="btn btn-outline-danger">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2>Edit Application</h2>
+        <form method="POST">
+            <div class="mb-3">
+                <label>Name</label>
+                <input type="text" name="name" class="form-control" value="{{ application.name }}" required>
+            </div>
+            <div class="mb-3">
+                <label>Contact</label>
+                <input type="text" name="contact" class="form-control" value="{{ application.contact }}">
+            </div>
+            <div class="mb-3">
+                <label>Email</label>
+                <input type="email" name="email" class="form-control" value="{{ application.email }}" required>
+            </div>
+            <div class="mb-3">
+                <label>Location</label>
+                <input type="text" name="location" class="form-control" value="{{ application.location }}">
+            </div>
+            <div class="mb-3">
+                <label>Skills</label>
+                <input type="text" name="skills" class="form-control" value="{{ application.skills }}">
+            </div>
+            <div class="mb-3">
+                <label>Experience(Years)</label>
+                <input type="text" name="experience" class="form-control" value="{{ application.experience }}">
+            </div>
+            <div class="mb-3">
+                <label>Status</label>
+                <select name="status" class="form-control" required>
+                    <option value="Pending" {% if application.status == 'Pending' %}selected{% endif %}>Pending</option>
+                    <option value="Rejected" {% if application.status == 'Rejected' %}selected{% endif %}>Rejected</option>
+                    <option value="Interview Ongoing" {% if application.status == 'Interview Ongoing' %}selected{% endif %}>Interview Ongoing</option>
+                    <option value="Selected" {% if application.status == 'Selected' %}selected{% endif %}>Selected</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary mb-5">Update Application</button>
+            <a href="{{ url_for('admin_manage_applications') }}" class="btn btn-secondary mb-5">Back</a>
+        </form>
+    </div>
+    {% include 'footer.html' %}
+</body>
+</html>
