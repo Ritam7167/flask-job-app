@@ -154,7 +154,7 @@
         <h2 class="text-center mb-4">Available Jobs</h2>
         <div class="row g-5">
             {% for job in jobs %}
-            <div class="col-md-4 job-card" data-location="{{ job['location'] }}" data-category="{{ job['category'] }}" data-company="{{ job['company'] }}" data-title="{{ job['title'] }}">
+            <div class="col-md-6 job-card" data-location="{{ job['location'] }}" data-category="{{ job['category'] }}" data-company="{{ job['company'] }}" data-title="{{ job['title'] }}">
                 <div class="card mb-4">
                     <div class="card-body">
                         <h5 class="card-title">{{ job['title'] }}</h5>
