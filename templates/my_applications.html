@@ -11,11 +11,83 @@
             height: 100%;
         }
         body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: #f8f9fa;
             display: flex;
             flex-direction: column;
         }
         main {
             flex: 1;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background: linear-gradient(45deg, #007bff, #00c6ff);
+        }
+        .navbar-brand, .navbar-text {
+            color: #fff !important;
+            font-weight: bold;
+        }
+        .navbar .btn {
+            border-radius: 10px;
+            font-weight: 500;
+        }
+
+        /* ✅ Equal card height & consistent design like index page */
+        .card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            border-radius: 12px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card-body form {
+            margin-top: auto; /* ✅ Button stays at bottom without extra gap */
+        }
+
+        /* ✅ Card Title like index page */
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        /* ✅ Card Text styling */
+        .card-body p {
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+        }
+
+        /* ✅ Button styling like index page */
+        .card-body .btn {
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        /* ✅ Add slight gap after description */
+        .card-body p:first-of-type {
+            margin-bottom: 0.6rem;
+        }
+
+        /* ✅ Add gap between rows */
+        .row.g-4 {
+            --bs-gutter-y: 1.5rem;
+        }
+
+        /* ✅ Add bottom gap before footer */
+        .container:last-of-type {
+            margin-bottom: 3rem;
         }
     </style>
 </head>
@@ -30,7 +102,7 @@
                     <span class="navbar-text">Welcome, {{ session['username'] }}</span>
                 </li>
                 <li class="nav-item me-2">
-                    <a href="{{ url_for('home') }}" class="btn btn-primary">Home</a>
+                    <a href="{{ url_for('home') }}" class="btn btn-light">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="{{ url_for('logout') }}" class="btn btn-danger">Logout</a>
@@ -42,17 +114,17 @@
 
 
     <!-- My Applications Section -->
-    <div class="container mt-5">
-        <h2 class="text-center">My Applications</h2>
+    <div class="container mt-5 mb-5">
+        <h2 class="text-center mb-4">My Applications</h2>
 
         {% if applications %}
-            <div class="row">
+            <div class="row g-4">
                 {% for application in applications %}
                 <div class="col-md-6">
                     <div class="card mb-4">
                         <div class="card-body">
                             <h5 class="card-title">{{ application.job.title }}</h5>
-                            <p><strong>Description:</strong> {{ application.job.description }}</p>
+                            <p class="mb-4"><strong>Description:</strong> {{ application.job.description }}</p>
                             <p><strong>Salary:</strong> {{ application.job.salary }}</p>
                             <p><strong>Location:</strong> {{ application.job.location }}</p>
                             <p><strong>Category:</strong> {{ application.job.category }}</p>

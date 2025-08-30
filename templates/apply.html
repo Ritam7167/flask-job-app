@@ -11,11 +11,26 @@
             height: 100%;
         }
         body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: #f8f9fa;
             display: flex;
             flex-direction: column;
         }
         main {
             flex: 1;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background: linear-gradient(45deg, #007bff, #00c6ff);
+        }
+        .navbar-brand, .navbar-text {
+            color: #fff !important;
+            font-weight: bold;
+        }
+        .navbar .btn {
+            border-radius: 10px;
+            font-weight: 500;
         }
     </style>
 </head>
@@ -29,10 +44,10 @@
                         <span class="navbar-text me-3">Welcome, {{ session['username'] }}</span>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ url_for('home') }}" class="btn btn-secondary mx-2">Home</a>
+                        <a href="{{ url_for('home') }}" class="btn btn-light mx-2">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ url_for('my_applications') }}" class="btn btn-info mx-2">My Applications</a>
+                        <a href="{{ url_for('my_applications') }}" class="btn btn-success mx-2">My Applications</a>
                     </li>
                     <li class="nav-item">
                         <a href="{{ url_for('logout') }}" class="btn btn-danger mx-2">Logout</a>
