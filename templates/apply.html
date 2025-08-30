@@ -37,9 +37,18 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
+            <!-- Brand -->
             <a class="navbar-brand" href="#">Job Portal</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto d-flex align-items-center"> <!-- Changed ml-auto to ms-auto -->
+
+            <!-- Toggler button for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto d-flex align-items-left gap-2">
                     <li class="nav-item">
                         <span class="navbar-text me-3">Welcome, {{ session['username'] }}</span>
                     </li>
@@ -63,27 +72,27 @@
         
         <form method="POST">
             <div class="mb-3">
-                <label for="name" class="form-label">Full Name</label>
+                <label for="name" class="form-label fw-bold">Full Name</label>
                 <input type="text" class="form-control" id="name" name="name" required>
             </div>
             <div class="mb-3">
-                <label for="contact" class="form-label">Contact Number</label>
+                <label for="contact" class="form-label fw-bold">Contact Number</label>
                 <input type="text" class="form-control" id="contact" name="contact" required>
             </div>
             <div class="mb-3">
-                <label for="email" class="form-label">Email Address</label>
+                <label for="email" class="form-label fw-bold">Email Address</label>
                 <input type="email" class="form-control" id="email" name="email" required>
             </div>
             <div class="mb-3">
-                <label for="location" class="form-label">Location</label>
+                <label for="location" class="form-label fw-bold">Location</label>
                 <input type="text" class="form-control" id="location" name="location">
             </div>
             <div class="mb-3">
-                <label for="skills" class="form-label">Skills</label>
+                <label for="skills" class="form-label fw-bold">Skills</label>
                 <input type="text" class="form-control" id="skills" name="skills">
             </div>
             <div class="mb-3">
-                <label for="experience" class="form-label">Experience (years)</label>
+                <label for="experience" class="form-label fw-bold">Experience (years)</label>
                 <input type="text" class="form-control" id="experience" name="experience">
             </div>
 
@@ -91,5 +100,7 @@
         </form>
     </div>
     {% include 'footer.html' %}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

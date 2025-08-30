@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
     <style>
+        html, body {
+            overflow-x: hidden;
+        }
         body {
             font-family: 'Segoe UI', Tahoma, sans-serif;
             background-color: #f8f9fa;
@@ -89,34 +92,42 @@
 </head>
 <body>
 <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(45deg, #007bff, #00c6ff);">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Job Portal</a>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ms-auto">  <!-- Changed to ms-auto for right alignment -->
+
+        <!-- Toggler for mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
                 {% if session['user_id'] %}
                     <li class="nav-item me-3">
-                        <span class="navbar-text">Welcome, {{ session['username'] }}</span>
+                        <span class="navbar-text text-white">Welcome, {{ session['username'] }}</span>
                     </li>
                     {% if session['role'] == 'job_seeker' %}
                         <li class="nav-item me-2">
-                            <a href="{{ url_for('my_applications') }}" class="btn btn-success">My Applications</a>
+                            <a href="{{ url_for('my_applications') }}" class="btn btn-success mb-2 mb-lg-0">My Applications</a>
                         </li>
                     {% elif session['role'] == 'employer' %}
                         <li class="nav-item me-2">
-                            <a href="{{ url_for('post_job') }}" class="btn btn-primary">Post a Job</a>
+                            <a href="{{ url_for('post_job') }}" class="btn btn-primary mb-2 mb-lg-0">Post a Job</a>
                         </li>
                         <li class="nav-item me-2">
-                            <a href="{{ url_for('manage_listings') }}" class="btn btn-info">Manage Listings</a>
+                            <a href="{{ url_for('manage_listings') }}" class="btn btn-info mb-2 mb-lg-0">Manage Listings</a>
                         </li>
                     {% endif %}
                     <li class="nav-item">
-                        <a href="{{ url_for('logout') }}" class="btn btn-danger">Logout</a>
+                        <a href="{{ url_for('logout') }}" class="btn btn-danger mb-2 mb-lg-0">Logout</a>
                     </li>
                 {% else %}
                     <li class="nav-item">
-                        <a href="{{ url_for('login') }}" class="btn btn-success me-2">Login</a>
-                        <a href="{{ url_for('register') }}" class="btn btn-secondary">Register</a>
+                        <a href="{{ url_for('login') }}" class="btn btn-success me-2 mb-2 mb-lg-0">Login</a>
+                        <a href="{{ url_for('register') }}" class="btn btn-secondary mb-2 mb-lg-0">Register</a>
                     </li>
                 {% endif %}
             </ul>
